@@ -1,7 +1,8 @@
-package net.syntaxsama.StarAPI.MessageUtils;
+package net.syntaxsama.StarAPI.Builders;
 
 import net.md_5.bungee.api.ChatMessageType;
 import net.md_5.bungee.api.chat.TextComponent;
+import net.syntaxsama.StarAPI.MessageUtils.MessageColors;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;

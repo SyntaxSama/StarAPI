@@ -1,4 +1,4 @@
-package net.syntaxsama.StarAPI.MessageUtils;
+package net.syntaxsama.StarAPI.Builders;
 
 import net.md_5.bungee.api.chat.BaseComponent;
 import net.md_5.bungee.api.chat.ClickEvent;
