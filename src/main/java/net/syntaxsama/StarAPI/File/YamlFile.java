@@ -15,12 +15,11 @@ public class YamlFile {
     public YamlFile(File pluginsFolder, String fileName) {
         this.file = new File(pluginsFolder, fileName.endsWith(".yml") ? fileName : fileName + ".yml");
 
-        // Set YAML options for proper formatting
         DumperOptions options = new DumperOptions();
-        options.setDefaultFlowStyle(DumperOptions.FlowStyle.BLOCK); // Enforce indentation
-        options.setPrettyFlow(true); // Makes YAML easier to read
-        options.setIndent(2); // Standard indentation
-        options.setDefaultScalarStyle(DumperOptions.ScalarStyle.PLAIN); // Keeps numbers raw, no !!int nonsense
+        options.setDefaultFlowStyle(DumperOptions.FlowStyle.BLOCK);
+        options.setPrettyFlow(true);
+        options.setIndent(2);
+        options.setDefaultScalarStyle(DumperOptions.ScalarStyle.PLAIN);
         options.setAllowUnicode(true);
 
         this.yaml = new Yaml(options);
@@ -33,7 +32,7 @@ public class YamlFile {
             try {
                 file.getParentFile().mkdirs();
                 file.createNewFile();
-                data = new LinkedHashMap<>(); // Use LinkedHashMap to maintain order
+                data = new LinkedHashMap<>();
                 save();
             } catch (IOException e) {
                 e.printStackTrace();
