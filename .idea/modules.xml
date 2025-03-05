@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/StarAPI.main.iml" filepath="$PROJECT_DIR$/.idea/modules/StarAPI.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/StarAPI.test.iml" filepath="$PROJECT_DIR$/.idea/modules/StarAPI.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/net.syntaxsama.StarAPI.main.iml" filepath="$PROJECT_DIR$/.idea/modules/net.syntaxsama.StarAPI.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/net.syntaxsama.StarAPI.test.iml" filepath="$PROJECT_DIR$/.idea/modules/net.syntaxsama.StarAPI.test.iml" />
     </modules>
   </component>
 </project>
