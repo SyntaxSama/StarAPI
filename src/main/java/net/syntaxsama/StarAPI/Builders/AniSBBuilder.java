@@ -1,5 +1,6 @@
 package net.syntaxsama.StarAPI.Builders;
 
+import net.syntaxsama.StarAPI.MessageUtils.MessageColors;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
@@ -43,7 +44,7 @@ public class AniSBBuilder {
       this.pulsingEnabled = false;
       this.slidingEnabled = false;
       this.colorCycle = new ChatColor[]{ChatColor.RED, ChatColor.GOLD, ChatColor.YELLOW, ChatColor.GREEN, ChatColor.AQUA, ChatColor.LIGHT_PURPLE};
-      this.title = ChatColor.translateAlternateColorCodes('&', title);
+      this.title = MessageColors.hex(title);
       ScoreboardManager manager = Bukkit.getScoreboardManager();
       this.scoreboard = manager.getNewScoreboard();
       this.objective = this.scoreboard.registerNewObjective("aniSB", "dummy", this.title);
